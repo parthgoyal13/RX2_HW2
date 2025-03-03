@@ -10,6 +10,7 @@ const Library=()=>{
   return (
     <div>
       <h2>Library Summary</h2>
+      <h5>Total Books: {books.length}</h5>
       <ul>
         {books.map((book)=><li key={book.isbn}>
           {book.title} by {book.author}  (ISBN:{book.isbn})
